@@ -1,0 +1,51 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Sticky Header */
+.header-sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.hero-gradient {
+    background: linear-gradient(135deg, #fff1f2 0%, #ffe4e6 100%);
+}
+
+.section-title {
+    border-bottom: 3px solid #db2777;
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+.nav-link {
+    transition: all 0.3s ease;
+    color: #475569;
+    font-weight: 500;
+}
+
+.nav-link.active {
+    color: #db2777;
+    font-weight: 700;
+}
+
+.mobile-nav-link {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+/* Scroll margin so header doesn't cover section titles */
+section {
+    scroll-margin-top: 100px;
+}
